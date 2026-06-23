@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harvest — Privacy Policy</title>
+  <style>
+    :root { --fg:#1f2328; --dim:#57606a; --accent:#6c8eff; --border:#d0d7de; --bg:#ffffff; --code:#f6f8fa; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; padding: 0;
+      background: var(--bg); color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65; font-size: 16px;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+    header { border-bottom: 1px solid var(--border); padding-bottom: 18px; margin-bottom: 28px; }
+    h1 { font-size: 28px; margin: 0 0 4px; }
+    h2 { font-size: 19px; margin: 34px 0 10px; }
+    .sub { color: var(--dim); font-size: 14px; }
+    p, li { color: var(--fg); }
+    .lead { color: var(--dim); }
+    ul { padding-left: 22px; }
+    li { margin: 6px 0; }
+    code { background: var(--code); border: 1px solid var(--border); border-radius: 4px; padding: 1px 5px; font-size: 13px; }
+    .pill { display:inline-block; background:#eef2ff; color:#3b54c4; border:1px solid #c9d4ff; border-radius:999px; padding:2px 10px; font-size:12px; font-weight:600; }
+    a { color: var(--accent); }
+    footer { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--border); color: var(--dim); font-size: 14px; }
+    .highlight { background:#f0fff4; border:1px solid #b7ebc6; border-radius:8px; padding:14px 16px; margin:18px 0; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <span class="pill">Browser Extension</span>
+      <h1>Harvest — Privacy Policy</h1>
+      <p class="sub">Last updated: June 23, 2026</p>
+    </header>
+
+    <p class="lead">
+      Harvest is a browser extension that inspects a website's front-end resources
+      (HTML, CSS, JavaScript, images, fonts, and other assets), can explore multiple
+      pages of a site, and lets you export a local, offline copy. This page explains
+      exactly what Harvest does and does not do with data.
+    </p>
+
+    <div class="highlight">
+      <strong>The short version:</strong> Harvest does <strong>not</strong> collect,
+      store, sell, or transmit any personal data. Everything it does happens locally,
+      inside your own browser and on your own device. There are no analytics, no
+      tracking, and no external servers operated by Harvest.
+    </div>
+
+    <h2>What data Harvest accesses</h2>
+    <ul>
+      <li><strong>Web page content of sites you actively act on.</strong> When you click
+        <em>Scan Page</em> or <em>Explore Site</em>, Harvest reads the current page (and,
+        for crawls, other same-origin pages of that site) to discover and collect their
+        resources. This only happens in response to your explicit action.</li>
+      <li><strong>Resource files of that site.</strong> To build a faithful offline copy,
+        Harvest fetches the site's own assets (stylesheets, scripts, images, fonts, etc.).</li>
+    </ul>
+
+    <h2>How that data is used</h2>
+    <ul>
+      <li>Collected page content and assets are processed <strong>entirely on your device</strong>,
+        to display them in the extension's side panel and to build the ZIP archive you choose to download.</li>
+      <li>Nothing is sent to Harvest's developer or to any third party. Harvest has no backend server.</li>
+      <li>Harvest does <strong>not</strong> use cookies, advertising IDs, analytics SDKs, or any tracking technology.</li>
+    </ul>
+
+    <h2>What Harvest stores</h2>
+    <ul>
+      <li>Harvest does not maintain a remote database and does not store your browsing
+        history. The only files saved are the ZIP archives <strong>you</strong> explicitly
+        export, which are written to your computer's normal Downloads location by your browser.</li>
+    </ul>
+
+    <h2>Permissions and why they are needed</h2>
+    <ul>
+      <li><code>sidePanel</code> — to show Harvest's interface as a docked side panel.</li>
+      <li><code>scripting</code> &amp; <code>tabs</code> — to run the resource-discovery
+        logic on the page you scan and to open/manage temporary background tabs while
+        crawling additional pages of the same site.</li>
+      <li><code>activeTab</code> / host access to websites (<code>&lt;all_urls&gt;</code>)
+        — because Harvest is a general-purpose site inspector, it must be able to read and
+        fetch resources from whatever site you choose to inspect. This access is used only
+        to perform the scan/export you request, and only on sites you act on.</li>
+    </ul>
+
+    <h2>Third-party services</h2>
+    <p>None. Harvest does not integrate any third-party analytics, advertising, or data
+      services. The optional local web server that Harvest bundles inside an exported ZIP
+      runs only on your own machine, when you choose to launch it, to let the saved site
+      render offline.</p>
+
+    <h2>Children's privacy</h2>
+    <p>Harvest is a developer/designer utility and is not directed at children. It collects
+      no personal information from anyone.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, the updated version will be posted on this page with a new
+      "Last updated" date.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy? Contact the developer at
+      <a href="mailto:autinhorse@hotmail.com">autinhorse@hotmail.com</a>.</p>
+
+    <footer>
+      Harvest is an open-source browser extension. This policy applies to the Harvest
+      extension distributed through the Chrome Web Store.
+    </footer>
+  </div>
+</body>
+</html>
